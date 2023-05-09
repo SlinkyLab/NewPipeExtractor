@@ -1307,10 +1307,7 @@ public final class YoutubeParsingHelper {
     @Nonnull
     public static String getAndroidUserAgent(@Nullable final Localization localization) {
         // Spoofing an Android 12 device with the hardcoded version of the Android app
-        return "com.google.android.youtube/" + ANDROID_YOUTUBE_CLIENT_VERSION
-                + " (Linux; U; Android 12; "
-                + (localization != null ? localization : Localization.DEFAULT).getCountryCode()
-                + ") gzip";
+        return "com.google.android.youtube/17.31.35 (Linux; U; Android 11) gzip";
     }
 
     /**
